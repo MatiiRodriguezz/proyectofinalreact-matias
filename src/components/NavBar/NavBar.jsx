@@ -1,30 +1,22 @@
-import React from 'react';
-import CartWidget from '../CartWidget/CartWidget';
-import navbar from './styles/navbar.scss'
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
-  const menu = [
-    {id: 1, categories: "Ir a Inicio"},
-    {id: 2, categories: "Buscar juegos"},
-    {id: 3, categories: "Comprar"},
-  ];
+const NavBar = ({Avengers, peliculas}) =>{
+    return(
 
-  return ( 
-  <div>
-    <nav>
-      <h1>Mati games</h1>
-      {menu.map((nav, index) => {
-        return (
-          <a href="#" key={index}>
-            {nav.categories}
-          </a>
-        );
-      })}
-    </nav>
-
-        <CartWidget/>
-  </div>
-  );
+    <div className='navbar'>
+      {
+        menus.map((menu)=>{
+          return <Link className='navbar__menu' to=
+          {menu.href} >{menu.name}</Link>
+        })
+      }
+      {
+        categorias.map((categoria)=>{
+          return <Link to={`/category/${categoria.id}`}>
+          {categoria.name}</Link>
+        })
+      }
+  </div>)
 }
 
 export default NavBar;
