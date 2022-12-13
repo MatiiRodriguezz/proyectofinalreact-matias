@@ -1,27 +1,27 @@
 export const categorias = [
     {
         id:10,
-        name:'Acción y aventura',
+        name:'The Avengers',
         id:1
     },
     {
         id:11,
-        name:'Familia',
+        name:'The Avengers Era de ultron',
         id:2
     },
     {
         id:12,
-        name:'Terror',
+        name:'The Avengers Infinity War',
         id:3
     },
     {
         id:13,
-        name:'Comedia',
+        name:'The Avengers Endgame',
         id:4
     },
     {
         id:14,
-        name:'Ciencia ficción',
+        name:'Black Widow',
         id:5
     },
 ]

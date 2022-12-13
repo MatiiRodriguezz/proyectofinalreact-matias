@@ -1,21 +1,17 @@
-import { Link } from 'react-router-dom';
+import './NavBar.css';
 
-const NavBar = ({Avengers, peliculas}) =>{
-    return(
+ const NavBar = ({menus}) => {
+  return(
 
-    <div className='navbar'>
-      {
-        menus.map((menu)=>{
-          return <Link className='navbar__menu' to=
-          {menu.href} >{menu.name}</Link>
-        })
+  <div className='NavBar'>
+    {
+      menus.map((menu)=>{
+        return <a className='navbar__menu' href={menu.href}>{menu.name}</a>
       }
-      {
-        categorias.map((categoria)=>{
-          return <Link to={`/category/${categoria.id}`}>
-          {categoria.name}</Link>
-        })
-      }
+      )
+    }
+
+
   </div>)
 }
 
