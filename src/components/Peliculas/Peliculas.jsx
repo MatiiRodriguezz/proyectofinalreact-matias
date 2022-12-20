@@ -19,7 +19,7 @@ const Peliculas = ()=>{
         <div>
             <h1>Peliculas</h1>
             {
-                Peliculas.map((Peñiculas)=>{
+                Peliculas.map((Peliculas)=>{
                     return <div><Link to={'./detallepelicula/${pelicula.id}/${pelicula.nombre}'}>{pelicula.nombre}</Link></div>
                 })
             }

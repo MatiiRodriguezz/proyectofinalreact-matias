@@ -28,29 +28,29 @@ export const categorias = [
 
 export const Peliculas = [
     {
-        name:'Black Adam',
+        name:'The Avengers',
         category:'1',
-        img:'./sonic-2.jpg'
+        img:'./The-Avengers.jpg.jpg'
     },
     {
-        name:'Halloween (2018)',
+        name:'The Avengers Era de ultron',
         category:'2',
-        img:'./sonic-2.jpg'
+        img:'./Avengers-era-de-Ultron.jpg.jpg'
     },
     {
-        name:'Los Pinguinos de Madagascar',
+        name:'The Avengers Infinity War',
         category:'3',
-        img:'./sonic-2.jpg'
+        img:'./Avengers-Infinity-War.jpg.jpg'
     },
     {
-        name:'Sonic 2',
+        name:'The Avengers Endgame',
         category:'4',
-        img:'./sonic-2.jpg'
+        img:'./Avengers-Endgame.jpg.jpg'
     },
     {
-        name:'Spider Man: Sin Camino a Casa',
+        name:'Black Widow',
         category:'5',
-        img:'./sonic-2.jpg'
+        img:'./Black-Widow.jpg.jpg'
     }
 ]
 

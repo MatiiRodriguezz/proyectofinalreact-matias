@@ -11,4 +11,4 @@ const Detalle  = () =>{
         </div>
     )
 }
-export default Detalle
+export default Detalle 

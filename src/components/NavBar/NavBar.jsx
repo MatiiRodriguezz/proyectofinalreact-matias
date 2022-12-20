@@ -1,17 +1,29 @@
-import './NavBar.css';
+import { Link } from 'react-router-dom';
 
- const NavBar = ({menus}) => {
+
+const NavBar = () =>{
+  const navList = [
+    {name:'Tienda Online', href: '/'},
+    {name: 'contancto', href: '/contacto'},
+    {name: 'Medios de Pago', href: '/mediosdepago'}
+  ]
+    
+  
   return(
 
-  <div className='NavBar'>
-    {
-      menus.map((menu)=>{
-        return <a className='navbar__menu' href={menu.href}>{menu.name}</a>
+    <div className='navbar'>
+      {
+        menus.map((menu)=>{
+          return <Link className='navbar__menu' to=
+          {menu.href} >{menu.name}</Link>
+        })
       }
-      )
-    }
-
-
+      {
+        categorias.map((categoria)=>{
+          return <Link to={`/category/${categoria.id}`}
+          className='navbar__menu'>{categoria.name}</Link>
+        })
+      }
   </div>)
 }
 
